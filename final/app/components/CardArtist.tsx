@@ -12,7 +12,7 @@ interface CardProps {
   showAlbum: (albumId: number) => void;
 }
 
-const CardAlbum: React.FC<CardProps> = ({ track, index, addToFavorites, isFavorite, showAlbum, removeFromFavorites, showArtist }) => {
+const CardArtist: React.FC<CardProps> = ({ track, index, addToFavorites, isFavorite, showAlbum, removeFromFavorites, showArtist }) => {
   const handleFavoriteClick = () => {
     if (isFavorite) {
       removeFromFavorites(index);
@@ -49,4 +49,4 @@ const CardAlbum: React.FC<CardProps> = ({ track, index, addToFavorites, isFavori
   );
 };
 
-export default CardAlbum;
+export default CardArtist;
